@@ -1,0 +1,86 @@
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin: auto 25%;
+  width: 935px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#pic img {
+  margin-bottom: 15px;
+  width: 293px;
+  height: 293px; /* Half the width */
+  margin: auto;
+}
+
+#avatar .avatar {
+vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  align-self: center;
+  position: relative;
+  float: both;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: Verdana, Arial;
+  margin: auto 35%;
+}
+
+
+.description {
+  font-size: 14px;
+  font-family: Verdana, Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row-header {
+  height: 200px;
+  width: 935px;
+  margin:auto 30%;
+  align-self: center;
+}
+
+.column-header-left{
+  width:33%;
+  align-content: center;
+}
+
+.column-header-right{
+  width:66%;
+  align-content: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .row-header{
+    display:inline;
+  }
+  .flex-container{
+    width:311px
+  }
+  .description{
+    display:none;
+  }
+  .row-header{
+    width:100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .row-header{
+    display:inline;
+  }
+
+  .flex-container{
+    width:623px;
+    margin-right:25%;
+  }
+}

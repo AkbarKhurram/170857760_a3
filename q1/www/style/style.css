@@ -1,0 +1,108 @@
+#snap {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+@font-face {
+   font-family: 'Merriweather', serif;
+   src: url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+}
+
+#sugar h1 {
+  color:#99003b;
+  font-family: Cookie;
+  font-size: 62px;
+  text-align: center;
+}
+
+#sugar p {
+  font-family: Cookie;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  }
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: beige;
+}
+ul.breadcrumb li {
+  display: inline;
+  margin:auto;
+  font-size: 24px;
+}
+
+ul.breadcrumb li a {
+  color: #66003b;
+  font-family: Cookie;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  display: flex;
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 90%;
+  }
+}
+
+#pic1 img {
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#pic2 img {
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.button {
+background-color: beige
+border: none;
+color: #66003b;
+font-size: 24px;
+padding: 15px 25px;
+text-align: center;
+font-family: Cookie;
+cursor: pointer;
+height: 100px;
+width: 200px;
+margin: auto;
+}
+
+.button:hover {
+background-color: beige;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobilestyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FakeChimp's Registration Form</title>
+    <script async src="js/validation.js"></script>
+  </head>
+
+  <body>
+    <div class="row">
+
+      <div class="column" style="background-color:white;">
+        <div id="pic">
+          <img src="img/logo-color.png">
+        </div>
+      </div>
+
+      <div class="column" style="background-color:white;">
+        <div id="container_demo" >
+          <div id="wrapper">
+          		<form  onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+
+            		<h1 > Get started with your account</h1>
+                <h2> Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform </h2>
+
+                  <input type="hidden" name="student_id" id="student_id" value="170857760">
+
+                  <label for="email" class="email" data-icon="e">Email</label>
+                  <br>
+            			<input type="text" name="email" id="email" style="width:50%;"/>
+
+                  <br>
+
+        					<label for="username" class="username" data-icon="u">Username</label>
+                  <br>
+                  <input type="text" name="username" id="username" style="width:50%;"/>
+
+                  <br>
+
+            			<label for="password" class="password" data-icon="p">Password &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</label>
+                  <input type="checkbox" onclick="myFunction()" >Show Password
+                  <br>
+            			<input type="password" name="password" id="password" style="width:50%;"/>
+                  <br>
+
+                <br>
+
+                <input type="submit" value="Get Started!" class="button">
+
+                <li> By clicking the "Get Started!" button, you are creating a FakeChimp account<br><br><p>
+                <li> ©2019 All Rights Reserved. FakeChimp© is a registered tradenark of WLUCP202 Class<p>
+
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+  	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+    <script>localStorage.checkoutURL = 'checkout/checkout.html';</script>
+    <title>Sugar Sprinkle Pastries </title>
+  </head>
+
+
+  <body style="background-color:pink;">
+
+    <div id="sugar">
+      <h1>Sugar Sprinkle Pastries</h1>
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Catering Order</a></li>
+        <li><a href="orders/index.html">Placed Orders</a></li>
+      </ul>
+
+      <div class="row">
+        <div class="column" style="background-color:pink;">
+          <div id="pic1">
+            <img src="img/cnc.jpg">
+          </div>
+        </div>
+
+        <div class="column" style="background-color:pink;">
+          <div id="pic2">
+            <img src="img/cach.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column" style="background-color:pink;">
+          <button class="button" onclick="clientAddItemToCart({prodName: 'Cookies n Cream', prodDesc: 'Chocolate Doughnut covered in Oreo crumbles', prodPrice: '10.00', prodQty: '1'})">Add to Cart</button>
+        </div>
+
+        <div class="column" style="background-color:pink;">
+          <button class="button" onclick="clientAddItemToCart({prodName: 'Choco Caramel Crunch', prodDesc: 'Creamy Carmel with Decadent Chocolate', prodPrice: '10.00', prodQty: '1'})">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
